@@ -7,46 +7,25 @@
 >
     <Page
         id="page"
-        showHeader="false"
     >
-        <content>
+        <customHeader>
             <tnt:ToolHeader>
                 <Title text="{i18n>title}" />
                 <ToolbarSpacer />
                 <SearchField width="300px" />
                 <ToolbarSpacer />
-                <Button icon="sap-icon://dark-mode" />
-                <Avatar />
+                <Button icon="sap-icon://dark-mode" press="onChangeTheme"/>
+                <Avatar displaySize="XS" src="./img/DoglasAvatar.png"/>
             </tnt:ToolHeader>
-            <HBox>
-                <GenericTile header="app01" class="sapUiSmallMargin">
+        </customHeader>
+        <content>
+            <HBox wrap="Wrap">
+                <GenericTile
+                    header="app01"
+                    class="sapUiSmallMargin"
+                >
                     <TileContent>
-                        <Text text="Description"/>
-                    </TileContent>
-                </GenericTile>
-                <GenericTile header="app01" class="sapUiSmallMargin">
-                    <TileContent>
-                        <Text text="Description"/>
-                    </TileContent>
-                </GenericTile>
-                <GenericTile header="app01" class="sapUiSmallMargin">
-                    <TileContent>
-                        <Text text="Description"/>
-                    </TileContent>
-                </GenericTile>
-                <GenericTile header="app01" class="sapUiSmallMargin">
-                    <TileContent>
-                        <Text text="Description"/>
-                    </TileContent>
-                </GenericTile>
-                <GenericTile header="app01" class="sapUiSmallMargin">
-                    <TileContent>
-                        <Text text="Description"/>
-                    </TileContent>
-                </GenericTile>
-                <GenericTile header="app01" class="sapUiSmallMargin">
-                    <TileContent>
-                        <Text text="Description"/>
+                        <Text text="Description" />
                     </TileContent>
                 </GenericTile>
             </HBox>
