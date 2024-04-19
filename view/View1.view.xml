@@ -19,16 +19,7 @@
             </tnt:ToolHeader>
         </customHeader>
         <content>
-            <HBox wrap="Wrap">
-                <GenericTile
-                    header="app01"
-                    class="sapUiSmallMargin"
-                >
-                    <TileContent>
-                        <Text text="Description" />
-                    </TileContent>
-                </GenericTile>
-            </HBox>
+            <HBox id="idHBoxMainContent" wrap="Wrap" />
         </content>
     </Page>
 </mvc:View>
